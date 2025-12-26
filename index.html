@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Luz Academy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dark">
+
+<header>
+  <h1>Luz Academy</h1>
+  <nav>
+    <button onclick="abrir('inicio')">Início</button>
+    <button onclick="abrir('comprar')">Comprar</button>
+    <button onclick="window.open('https://discord.gg/kyeU97dNMp')">Discord</button>
+    <button onclick="toggleTheme()">🌙</button>
+  </nav>
+</header>
+
+<section id="inicio" class="pagina ativa">
+  <h2>Servidor SA:MP</h2>
+  <p>Loja oficial do servidor Luz Academy.</p>
+  <p>Créditos da GM e Site: <b>King_Patinhas</b></p>
+</section>
+
+<section id="comprar" class="pagina">
+  <div class="container">
+  <h2>Comprar VIP</h2>
+
+  <label>Nick do jogador *</label>
+  <input id="nick" placeholder="Ex: King_Patinhas">
+
+  <label>IDF da conta (opcional)</label>
+  <input id="idf" type="number" min="1" max="500">
+
+  <div class="cards">
+    <div class="card">
+      <h3>🥉 VIP Comum</h3>
+      <p>R$ 10,00</p>
+      <button onclick="comprar('VIP Comum',10)">Comprar</button>
+    </div>
+
+    <div class="card destaque">
+      <h3>🥇 VIP Ouro</h3>
+      <p>R$ 25,00</p>
+      <button onclick="comprar('VIP Ouro',25)">Comprar</button>
+    </div>
+
+    <div class="card premium">
+      <h3>💎 VIP Diamante</h3>
+      <p>R$ 50,00</p>
+      <button onclick="comprar('VIP Diamante',50)">Comprar</button>
+    </div>
+  </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
